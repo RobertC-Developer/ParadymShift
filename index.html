@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParadymShift - Official Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: #000;
+            border-bottom: 2px solid #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            to { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            text-align: center;
+        }
+
+        .bio {
+            background: rgba(20, 20, 20, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        .bio p {
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+
+        .bio span {
+            color: #ffff00;
+            text-shadow: 0 0 5px #ffff00;
+        }
+
+        .soundcloud {
+            margin: 2rem 0;
+        }
+
+        .socials a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .socials a:hover {
+            transform: scale(1.1);
+        }
+
+        .twitter {
+            background: #00f;
+            color: #fff;
+            box-shadow: 0 0 10px #00f;
+        }
+
+        .instagram {
+            background: #800080;
+            color: #fff;
+            box-shadow: 0 0 10px #800080;
+        }
+
+        .mixtape {
+            font-size: 1.2rem;
+            color: #00ff00;
+            text-shadow: 0 0 5px #00ff00;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #000;
+            border-top: 2px solid #00f;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .bio p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ParadymShift</h1>
+    </header>
+
+    <div class="container">
+        <div class="bio">
+            <p>
+                Yo, I'm <span>Robert Christensen</span>, aka <span>ParadymShift</span>. 
+                I'm a vegan rapper spitting fire from the heart. 
+                By day, I code in Python and I'm diving into Mojo, building my skills as an aspiring software dev. 
+                Since going vegan in 2015 after watching <em>Dominion</em>, I live by my principles. 
+                My music’s raw, real, and ready to shift your perspective.
+            </p>
+            <p class="mixtape">
+                Dropping a new mixtape later this year—stay tuned!
+            </p>
+        </div>
+
+        <div class="soundcloud">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" 
+                    allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/13251007&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+        </div>
+
+        <div class="socials">
+            <a href="https://x.com/paradymshiftveg" class="twitter" target="_blank">@ParadymShiftVeg</a>
+            <a href="https://instagram.com/paradymshiftvegan" class="instagram" target="_blank">@ParadymShiftVegan</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ParadymShift. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add subtle interactivity (e.g., hover effects are handled by CSS)
+        console.log("Welcome to ParadymShift's world!");
+    </script>
+</body>
+</html>
