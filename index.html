@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    ﻿<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDFRPQ8RJ9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -35,6 +35,32 @@
             background: #000;
             border-bottom: 2px solid #ff0000;
             box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
         }
 
         h1 {
@@ -127,6 +153,10 @@
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .bio p { font-size: 1rem; }
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -134,6 +164,13 @@
     <header>
         <h1>ParadymShift</h1>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="songs.html">Songs & Lyrics</a></li>
+            <!-- Add more menu items here in the future -->
+        </ul>
+    </nav>
 
     <div class="container">
         <div class="bio">
@@ -164,7 +201,6 @@
     </footer>
 
     <script>
-        // Add subtle interactivity (e.g., hover effects are handled by CSS)
         console.log("Welcome to ParadymShift's world!");
     </script>
 </body>
