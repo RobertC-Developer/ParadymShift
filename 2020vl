@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDFRPQ8RJ9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-WDFRPQ8RJ9');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParadymShift - Vegan Shinobi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: #000;
+            border-bottom: 2px solid #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #00ff00;
+            text-shadow: 0 0 5px #00ff00;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            to { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .lyrics {
+            background: rgba(20, 20, 20, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+            text-align: center;
+        }
+
+        .lyric-line {
+            margin: 0.5rem 0;
+            position: relative;
+        }
+
+        .annotated {
+            color: #ffffff;
+            position: relative;
+            cursor: help;
+            border-bottom: 1px dotted #ffff00;
+        }
+
+        .annotation {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: #ffffff;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ff0000;
+            width: 200px;
+            z-index: 10;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .annotated:hover .annotation {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #000;
+            border-top: 2px solid #00f;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .annotation {
+                width: 150px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ParadymShift</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Songs & Lyrics</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="lyrics">
+            <h2>Vegan Shinobi</h2>
+            <div class="lyric-line">
+                <span class="annotated">Plant-based ninja in the night
+                    <span class="annotation">Reference to my vegan lifestyle and stealthy approach to music.</span>
+                </span>
+            </div>
+            <div class="lyric-line">
+                Spittin' rhymes that ignite
+            </div>
+            <div class="lyric-line">
+                <span class="annotated">No meat, just beats, keep it tight
+                    <span class="annotation">Emphasizing veganism and musical precision.</span>
+                </span>
+            </div>
+            <div class="lyric-line">
+                Shift the game, bring the light
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 ParadymShift. All rights reserved. | <a href="privacypolicy.html">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>
